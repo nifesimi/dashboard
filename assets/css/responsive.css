@@ -1,0 +1,35 @@
+@media(max-width: 767px){
+	main section.main{
+	width: 100%;
+
+	}
+
+	#mobile{
+	position: fixed;
+    width: 50%;
+    top: 0px;
+    height: 100vh;
+    background: #FFF;
+    z-index: 5;
+    right: 0px;
+    padding: 30px;
+    transition: all 0.5s cubic-bezier(0.6, 0.38, 0, 1.21);
+    transform: translateX(100%);
+	}
+
+	.open #mobile{
+		transform: translateX(0%) !important;
+	}
+
+	header, .wrapper{
+		transition: all 0.5s cubic-bezier(0.6, 0.38, 0, 1.21);
+	}
+
+	.open header {
+		width: 50%;
+	}
+
+	.open .wrapper{
+		width: 50%;
+	}
+}
